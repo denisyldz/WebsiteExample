@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamDessert</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class ="hero-img"> </div>
+        <div class="wrapper" >
+            <header>   
+                <a href="#" class="logo">Dream<span>Dessert</span></a>
+                
+                <nav>
+                    <svg class="close" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.12 10L15.65 13.53L13.53 15.65L10 12.12L6.46003 15.66L4.34003 13.54L7.88003 10L4.34003 6.46003L6.46003 4.34003L10 7.88003L13.54 4.35003L15.66 6.47003L12.12 10Z" fill="#E972F3"/>
+                    </svg>
+
+                    <ul>
+                       
+                        <li><a href="#">Home</a></li>
+                        </li><a href="#">Desserts</a></li>
+                        <li><a href="#">Help</a></li>
+                        
+                    </ul>
+            
+                </nav>
+                <svg class= "close" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+                </svg>
+            </header>
+            <section class="hero">
+                <h1>Your dreams come true here.</h1>
+
+                <p class = "subhead" >We are doing this job just because of saving you from your nightmares.</p>
+
+                <svg class="heart" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17.12C13.33 15.72 15.74 13.33 17.04 10.91C18.32 8.49997 18.5 6.09997 17.36 4.65997C16.33 3.36997 14.99 2.87997 13.63 2.91997C12.27 2.95997 10.95 3.54997 10 4.37997C9.05 3.54997 7.73 2.95997 6.37 2.91997C5.01 2.87997 3.67 3.36997 2.64 4.65997C1.5 6.09997 1.68 8.49997 2.98 10.91C4.26 13.33 6.67 15.72 10 17.12Z" fill="black"/>
+                </svg>
+                    
+                    
+
+            </section>
+
+            <section class ="more-info">
+
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">HomeMade</p>
+                        <p class="desc">There is nothing like the joy that comes from homemade baked goods. It can make any occasion feel extra special, from birthdays to anniversaries to put lucks and everyday dinners.</p>
+                    </div>
+                    <img src="images/lllll.jpg" alt="cake picture">
+                </div>
+                <div class="feature left">
+                    <div class="content">
+                        <p class="title">Huge Menu</p>
+                        <p class="desc">From cakes to bars to pies and even dessert dips, all you have to do is pick your "dream".</p>
+                    </div>
+                    <img src="images/waffle.jpg" alt="waffle picture">
+                </div>
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">Sugar Free Option</p>
+                        <p class="desc">It can be hard to find sugar-free desserts that don't taste like they're sugar-free. But before you give up on dessert altogether (never give up on dessert!), check out our shop!</p>
+                    </div>
+                    <img src="images/donut.jpg" alt="donut picture">
+                </div>
+
+
+
+            </section>
+
+        </div>
+
+        <script>
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click',() => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click',() => {
+                nav.classList.remove('close-nav')
+            })
+
+            
+        </script>
+
+
+    </body>
+</html>
